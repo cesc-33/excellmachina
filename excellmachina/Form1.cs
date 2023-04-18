@@ -38,6 +38,11 @@ namespace excellmachina
             radioButtonSheetDelete.CheckedChanged += new EventHandler(RadioButton_CheckedChanged);
             radioButtonNewSheet.CheckedChanged += new EventHandler(RadioButton_CheckedChanged);
             radioButtonTemplate.CheckedChanged += new EventHandler(RadioButton_CheckedChanged);
+
+            buttonEditPnl.BackColor = SystemColors.ControlDarkDark;
+            buttonSelectPnl.BackColor = SystemColors.MenuHighlight;
+            panelEdit.Visible = false;
+            panelSelect.Visible = true;
         }
 
         //Import data from excel and display on grid
@@ -381,6 +386,21 @@ namespace excellmachina
                 }
                 Application.Exit();
             }
+        }
+        private void buttonSelectPnl_Click(object sender, EventArgs e)
+        {
+            buttonEditPnl.BackColor = SystemColors.ControlDarkDark;
+            buttonSelectPnl.BackColor = SystemColors.MenuHighlight;
+            panelEdit.Visible = false;
+            panelSelect.Visible = true;
+        }
+
+        private void buttonEditPnl_Click(object sender, EventArgs e)
+        {
+            buttonSelectPnl.BackColor = SystemColors.ControlDarkDark;
+            buttonEditPnl.BackColor = SystemColors.MenuHighlight;
+            panelSelect.Visible = false;
+            panelEdit.Visible = true;
         }
     }
 }

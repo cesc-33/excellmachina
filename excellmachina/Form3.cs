@@ -23,6 +23,7 @@ namespace excellmachina
         
         private Excel.Application xlApp;
         private Excel.Workbook xlWorkBook;
+        private Excel.Worksheet xlWorksheet;
 
 
         public editValueForm(Form1 form1)
@@ -38,24 +39,40 @@ namespace excellmachina
                 xlApp = new Excel.Application();
                 xlWorkBook = xlApp.Workbooks.Open(excelFilePath);
 
-                Excel.Range currentFind = null;
-                Excel.Range firstFind = null;
+                xlWorksheet = xlWorkBook.Worksheets[1];
+                Range usedRange = xlWorksheet.UsedRange;
 
-                Excel.Range Fruits = xlApp.Cells;
+                foreach (Range cell in usedRange.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(SearchValue.ToLower()))
+                    {
+                        label2.Text = "Found at " + xlWorksheet.Name + "\ncolumn - " + usedRange.Column +
+                            "\nrow - " + usedRange.Row;
+                        break;
+                    }
+                    else
+                    {
+                        label2.Text = "keinen Wert gefunden";
+                    }
+                }
+                //Excel.Range currentFind = null;
+                //Excel.Range firstFind = null;
+
+                //Excel.Range Fruits = xlApp.Cells;
                 
-                currentFind = Fruits.Find(What: SearchValue, LookIn: XlFindLookIn.xlValues, LookAt: XlLookAt.xlPart,
-                    SearchOrder: XlSearchOrder.xlByRows, SearchDirection: XlSearchDirection.xlNext, MatchCase: false);
+                //currentFind = Fruits.Find(What: SearchValue, LookIn: XlFindLookIn.xlValues, LookAt: XlLookAt.xlPart,
+                //    SearchOrder: XlSearchOrder.xlByRows, SearchDirection: XlSearchDirection.xlNext, MatchCase: false);
 
-                if (currentFind != null)
-                {
-                    firstFind = currentFind;
-                    label2.Text = "Found at " + currentFind.Worksheet.Name + "\ncolumn - " + currentFind.Column +
-                        "\nrow - " + currentFind.Row;
-                }
-                else
-                {
-                    label2.Text = "nothing found";
-                }
+                //if (currentFind != null)
+                //{
+                //    firstFind = currentFind;
+                //    label2.Text = "Found at " + currentFind.Worksheet.Name + "\ncolumn - " + currentFind.Column +
+                //        "\nrow - " + currentFind.Row;
+                //}
+                //else
+                //{
+                //    label2.Text = "nothing found";
+                //}
             }
             catch (Exception)
             {

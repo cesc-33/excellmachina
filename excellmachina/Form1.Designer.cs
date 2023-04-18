@@ -28,14 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.okButton = new System.Windows.Forms.Button();
-            this.cancelButton = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.radioButtonTemplate = new System.Windows.Forms.RadioButton();
             this.radioButtonNewSheet = new System.Windows.Forms.RadioButton();
             this.radioButtonSheetDelete = new System.Windows.Forms.RadioButton();
+            this.dataNameLabelFrm1 = new System.Windows.Forms.Label();
             this.sheetLockLabel = new System.Windows.Forms.Label();
             this.moveSheetChkbx = new System.Windows.Forms.CheckBox();
             this.sheetRadioBtn = new System.Windows.Forms.Button();
@@ -46,8 +43,6 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
@@ -61,83 +56,34 @@
             this.label10 = new System.Windows.Forms.Label();
             this.radioButtonSearchVar = new System.Windows.Forms.RadioButton();
             this.radioButtonAreaDel = new System.Windows.Forms.RadioButton();
-            this.dataNameLabelFrm1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.buttonSelectPnl = new System.Windows.Forms.Button();
+            this.buttonEditPnl = new System.Windows.Forms.Button();
+            this.okButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.panelConture = new System.Windows.Forms.Panel();
+            this.panelSelect = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelEdit = new System.Windows.Forms.Panel();
+            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panelConture.SuspendLayout();
+            this.panelSelect.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panelEdit.SuspendLayout();
             this.SuspendLayout();
             // 
-            // okButton
+            // panel5
             // 
-            this.okButton.Location = new System.Drawing.Point(879, 280);
-            this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(100, 60);
-            this.okButton.TabIndex = 13;
-            this.okButton.Text = "OK";
-            this.okButton.UseVisualStyleBackColor = true;
-            this.okButton.Click += new System.EventHandler(this.okButton_Click);
-            // 
-            // cancelButton
-            // 
-            this.cancelButton.BackColor = System.Drawing.Color.Tomato;
-            this.cancelButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Salmon;
-            this.cancelButton.Location = new System.Drawing.Point(879, 346);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(100, 60);
-            this.cancelButton.TabIndex = 14;
-            this.cancelButton.Text = "Abbrechen";
-            this.cancelButton.UseVisualStyleBackColor = false;
-            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.ItemSize = new System.Drawing.Size(64, 50);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Multiline = true;
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(983, 274);
-            this.tabControl1.TabIndex = 15;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Controls.Add(this.dataNameLabelFrm1);
-            this.tabPage1.Controls.Add(this.sheetLockLabel);
-            this.tabPage1.Controls.Add(this.moveSheetChkbx);
-            this.tabPage1.Controls.Add(this.sheetRadioBtn);
-            this.tabPage1.Controls.Add(this.sheetLockBtn);
-            this.tabPage1.Controls.Add(this.importWorkbookBtn);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.copySheetBtn);
-            this.tabPage1.Controls.Add(this.listBox1);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.comboBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 54);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(975, 216);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Auswählen";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.radioButtonTemplate);
-            this.panel2.Controls.Add(this.radioButtonNewSheet);
-            this.panel2.Controls.Add(this.radioButtonSheetDelete);
-            this.panel2.Location = new System.Drawing.Point(764, 99);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(161, 100);
-            this.panel2.TabIndex = 25;
+            this.panel5.Controls.Add(this.radioButtonTemplate);
+            this.panel5.Controls.Add(this.radioButtonNewSheet);
+            this.panel5.Controls.Add(this.radioButtonSheetDelete);
+            this.panel5.Location = new System.Drawing.Point(742, 114);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(149, 100);
+            this.panel5.TabIndex = 25;
             // 
             // radioButtonTemplate
             // 
@@ -171,10 +117,19 @@
             this.radioButtonSheetDelete.Text = "Tabellenblatt löschen";
             this.radioButtonSheetDelete.UseVisualStyleBackColor = true;
             // 
+            // dataNameLabelFrm1
+            // 
+            this.dataNameLabelFrm1.AutoSize = true;
+            this.dataNameLabelFrm1.Location = new System.Drawing.Point(740, 55);
+            this.dataNameLabelFrm1.Name = "dataNameLabelFrm1";
+            this.dataNameLabelFrm1.Size = new System.Drawing.Size(58, 13);
+            this.dataNameLabelFrm1.TabIndex = 18;
+            this.dataNameLabelFrm1.Text = "Dateiname";
+            // 
             // sheetLockLabel
             // 
             this.sheetLockLabel.AutoSize = true;
-            this.sheetLockLabel.Location = new System.Drawing.Point(761, 16);
+            this.sheetLockLabel.Location = new System.Drawing.Point(740, 24);
             this.sheetLockLabel.Name = "sheetLockLabel";
             this.sheetLockLabel.Size = new System.Drawing.Size(102, 13);
             this.sheetLockLabel.TabIndex = 24;
@@ -183,7 +138,7 @@
             // moveSheetChkbx
             // 
             this.moveSheetChkbx.AutoSize = true;
-            this.moveSheetChkbx.Location = new System.Drawing.Point(765, 74);
+            this.moveSheetChkbx.Location = new System.Drawing.Point(743, 89);
             this.moveSheetChkbx.Name = "moveSheetChkbx";
             this.moveSheetChkbx.Size = new System.Drawing.Size(148, 17);
             this.moveSheetChkbx.TabIndex = 23;
@@ -193,38 +148,50 @@
             // 
             // sheetRadioBtn
             // 
-            this.sheetRadioBtn.Location = new System.Drawing.Point(545, 99);
+            this.sheetRadioBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.sheetRadioBtn.FlatAppearance.BorderSize = 0;
+            this.sheetRadioBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sheetRadioBtn.ForeColor = System.Drawing.SystemColors.Window;
+            this.sheetRadioBtn.Location = new System.Drawing.Point(523, 114);
             this.sheetRadioBtn.Name = "sheetRadioBtn";
             this.sheetRadioBtn.Size = new System.Drawing.Size(168, 23);
             this.sheetRadioBtn.TabIndex = 22;
             this.sheetRadioBtn.Text = "Tabellenblatt löschen";
-            this.sheetRadioBtn.UseVisualStyleBackColor = true;
+            this.sheetRadioBtn.UseVisualStyleBackColor = false;
             this.sheetRadioBtn.Click += new System.EventHandler(this.sheetRadioBtn_Click);
             // 
             // sheetLockBtn
             // 
-            this.sheetLockBtn.Location = new System.Drawing.Point(545, 11);
+            this.sheetLockBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.sheetLockBtn.FlatAppearance.BorderSize = 0;
+            this.sheetLockBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sheetLockBtn.ForeColor = System.Drawing.SystemColors.Window;
+            this.sheetLockBtn.Location = new System.Drawing.Point(523, 19);
             this.sheetLockBtn.Name = "sheetLockBtn";
             this.sheetLockBtn.Size = new System.Drawing.Size(168, 23);
             this.sheetLockBtn.TabIndex = 21;
             this.sheetLockBtn.Text = "Blattschutz an/aus";
-            this.sheetLockBtn.UseVisualStyleBackColor = true;
+            this.sheetLockBtn.UseVisualStyleBackColor = false;
             this.sheetLockBtn.Click += new System.EventHandler(this.sheetLockBtn_Click);
             // 
             // importWorkbookBtn
             // 
-            this.importWorkbookBtn.Location = new System.Drawing.Point(545, 139);
+            this.importWorkbookBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.importWorkbookBtn.FlatAppearance.BorderSize = 0;
+            this.importWorkbookBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.importWorkbookBtn.ForeColor = System.Drawing.SystemColors.Window;
+            this.importWorkbookBtn.Location = new System.Drawing.Point(523, 164);
             this.importWorkbookBtn.Name = "importWorkbookBtn";
             this.importWorkbookBtn.Size = new System.Drawing.Size(168, 50);
             this.importWorkbookBtn.TabIndex = 19;
             this.importWorkbookBtn.Text = "Arbeitsmappe importieren...";
-            this.importWorkbookBtn.UseVisualStyleBackColor = true;
+            this.importWorkbookBtn.UseVisualStyleBackColor = false;
             this.importWorkbookBtn.Click += new System.EventHandler(this.importWorkbookBtn_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(295, 16);
+            this.label7.Location = new System.Drawing.Point(273, 24);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 13);
             this.label7.TabIndex = 18;
@@ -232,19 +199,23 @@
             // 
             // copySheetBtn
             // 
-            this.copySheetBtn.Location = new System.Drawing.Point(545, 70);
+            this.copySheetBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.copySheetBtn.FlatAppearance.BorderSize = 0;
+            this.copySheetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.copySheetBtn.ForeColor = System.Drawing.SystemColors.Window;
+            this.copySheetBtn.Location = new System.Drawing.Point(523, 85);
             this.copySheetBtn.Name = "copySheetBtn";
             this.copySheetBtn.Size = new System.Drawing.Size(168, 23);
             this.copySheetBtn.TabIndex = 20;
             this.copySheetBtn.Text = "Tabellenblatt kopieren";
-            this.copySheetBtn.UseVisualStyleBackColor = true;
+            this.copySheetBtn.UseVisualStyleBackColor = false;
             this.copySheetBtn.Click += new System.EventHandler(this.copySheetBtn_Click);
             // 
             // listBox1
             // 
             this.listBox1.AllowDrop = true;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(298, 42);
+            this.listBox1.Location = new System.Drawing.Point(276, 52);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(168, 95);
             this.listBox1.TabIndex = 17;
@@ -252,7 +223,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 16);
+            this.label6.Location = new System.Drawing.Point(30, 24);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(125, 13);
             this.label6.TabIndex = 16;
@@ -260,41 +231,21 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(27, 42);
+            this.comboBox1.Location = new System.Drawing.Point(0, 0);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(168, 21);
+            this.comboBox1.Size = new System.Drawing.Size(164, 21);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage2.Controls.Add(this.panel1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 54);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(975, 216);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Bearbeiten";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.radioButtonSearchVar);
-            this.panel1.Controls.Add(this.radioButtonAreaDel);
-            this.panel1.Location = new System.Drawing.Point(6, 6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(963, 210);
-            this.panel1.TabIndex = 17;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.searchBox);
             this.panel4.Controls.Add(this.searchButton);
-            this.panel4.Location = new System.Drawing.Point(159, 13);
+            this.panel4.Location = new System.Drawing.Point(179, 59);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(158, 138);
             this.panel4.TabIndex = 27;
@@ -309,12 +260,15 @@
             // 
             // searchButton
             // 
+            this.searchButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchButton.ForeColor = System.Drawing.SystemColors.Window;
             this.searchButton.Location = new System.Drawing.Point(46, 34);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(66, 20);
             this.searchButton.TabIndex = 16;
             this.searchButton.Text = "🔍";
-            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.UseVisualStyleBackColor = false;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // panel3
@@ -326,7 +280,7 @@
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Location = new System.Drawing.Point(323, 13);
+            this.panel3.Location = new System.Drawing.Point(343, 59);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(158, 138);
             this.panel3.TabIndex = 26;
@@ -342,12 +296,15 @@
             // 
             // deleteButton
             // 
+            this.deleteButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteButton.ForeColor = System.Drawing.SystemColors.Window;
             this.deleteButton.Location = new System.Drawing.Point(44, 113);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 25;
             this.deleteButton.Text = "Löschen";
-            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.UseVisualStyleBackColor = false;
             // 
             // fromBox
             // 
@@ -394,7 +351,7 @@
             // 
             this.radioButtonSearchVar.AutoSize = true;
             this.radioButtonSearchVar.Checked = true;
-            this.radioButtonSearchVar.Location = new System.Drawing.Point(13, 13);
+            this.radioButtonSearchVar.Location = new System.Drawing.Point(33, 59);
             this.radioButtonSearchVar.Name = "radioButtonSearchVar";
             this.radioButtonSearchVar.Size = new System.Drawing.Size(86, 17);
             this.radioButtonSearchVar.TabIndex = 0;
@@ -406,7 +363,7 @@
             // radioButtonAreaDel
             // 
             this.radioButtonAreaDel.AutoSize = true;
-            this.radioButtonAreaDel.Location = new System.Drawing.Point(13, 46);
+            this.radioButtonAreaDel.Location = new System.Drawing.Point(33, 92);
             this.radioButtonAreaDel.Name = "radioButtonAreaDel";
             this.radioButtonAreaDel.Size = new System.Drawing.Size(101, 17);
             this.radioButtonAreaDel.TabIndex = 1;
@@ -414,60 +371,162 @@
             this.radioButtonAreaDel.UseVisualStyleBackColor = true;
             this.radioButtonAreaDel.CheckedChanged += new System.EventHandler(this.radioButtonAreaDel_CheckedChanged);
             // 
-            // dataNameLabelFrm1
-            // 
-            this.dataNameLabelFrm1.AutoSize = true;
-            this.dataNameLabelFrm1.Location = new System.Drawing.Point(762, 50);
-            this.dataNameLabelFrm1.Name = "dataNameLabelFrm1";
-            this.dataNameLabelFrm1.Size = new System.Drawing.Size(58, 13);
-            this.dataNameLabelFrm1.TabIndex = 18;
-            this.dataNameLabelFrm1.Text = "Dateiname";
-            // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 280);
+            this.dataGridView1.Location = new System.Drawing.Point(81, 281);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(866, 344);
+            this.dataGridView1.Size = new System.Drawing.Size(902, 344);
             this.dataGridView1.TabIndex = 19;
+            // 
+            // buttonSelectPnl
+            // 
+            this.buttonSelectPnl.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonSelectPnl.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
+            this.buttonSelectPnl.FlatAppearance.BorderSize = 0;
+            this.buttonSelectPnl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSelectPnl.ForeColor = System.Drawing.SystemColors.Window;
+            this.buttonSelectPnl.Location = new System.Drawing.Point(0, 0);
+            this.buttonSelectPnl.Name = "buttonSelectPnl";
+            this.buttonSelectPnl.Size = new System.Drawing.Size(80, 60);
+            this.buttonSelectPnl.TabIndex = 42;
+            this.buttonSelectPnl.Text = "button2";
+            this.buttonSelectPnl.UseVisualStyleBackColor = false;
+            this.buttonSelectPnl.Click += new System.EventHandler(this.buttonSelectPnl_Click);
+            // 
+            // buttonEditPnl
+            // 
+            this.buttonEditPnl.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonEditPnl.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
+            this.buttonEditPnl.FlatAppearance.BorderSize = 0;
+            this.buttonEditPnl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEditPnl.ForeColor = System.Drawing.SystemColors.Window;
+            this.buttonEditPnl.Location = new System.Drawing.Point(0, 59);
+            this.buttonEditPnl.Name = "buttonEditPnl";
+            this.buttonEditPnl.Size = new System.Drawing.Size(80, 60);
+            this.buttonEditPnl.TabIndex = 43;
+            this.buttonEditPnl.Text = "button3";
+            this.buttonEditPnl.UseVisualStyleBackColor = false;
+            this.buttonEditPnl.Click += new System.EventHandler(this.buttonEditPnl_Click);
+            // 
+            // okButton
+            // 
+            this.okButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.okButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
+            this.okButton.FlatAppearance.BorderSize = 0;
+            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.okButton.Location = new System.Drawing.Point(0, 505);
+            this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(80, 60);
+            this.okButton.TabIndex = 44;
+            this.okButton.Text = "OK";
+            this.okButton.UseVisualStyleBackColor = false;
+            this.okButton.Click += new System.EventHandler(this.okButton_Click);
+            // 
+            // cancelButton
+            // 
+            this.cancelButton.BackColor = System.Drawing.Color.Tomato;
+            this.cancelButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
+            this.cancelButton.FlatAppearance.BorderSize = 0;
+            this.cancelButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Salmon;
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cancelButton.Location = new System.Drawing.Point(0, 564);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(80, 60);
+            this.cancelButton.TabIndex = 45;
+            this.cancelButton.Text = "Abbrechen";
+            this.cancelButton.UseVisualStyleBackColor = false;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            // 
+            // panelConture
+            // 
+            this.panelConture.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panelConture.Controls.Add(this.buttonEditPnl);
+            this.panelConture.Controls.Add(this.buttonSelectPnl);
+            this.panelConture.Controls.Add(this.cancelButton);
+            this.panelConture.Controls.Add(this.okButton);
+            this.panelConture.Location = new System.Drawing.Point(0, 0);
+            this.panelConture.Name = "panelConture";
+            this.panelConture.Size = new System.Drawing.Size(80, 626);
+            this.panelConture.TabIndex = 46;
+            // 
+            // panelSelect
+            // 
+            this.panelSelect.BackColor = System.Drawing.SystemColors.Window;
+            this.panelSelect.Controls.Add(this.panel1);
+            this.panelSelect.Controls.Add(this.dataNameLabelFrm1);
+            this.panelSelect.Controls.Add(this.panel5);
+            this.panelSelect.Controls.Add(this.label6);
+            this.panelSelect.Controls.Add(this.sheetLockLabel);
+            this.panelSelect.Controls.Add(this.listBox1);
+            this.panelSelect.Controls.Add(this.moveSheetChkbx);
+            this.panelSelect.Controls.Add(this.copySheetBtn);
+            this.panelSelect.Controls.Add(this.sheetRadioBtn);
+            this.panelSelect.Controls.Add(this.label7);
+            this.panelSelect.Controls.Add(this.sheetLockBtn);
+            this.panelSelect.Controls.Add(this.importWorkbookBtn);
+            this.panelSelect.Location = new System.Drawing.Point(80, 0);
+            this.panelSelect.Name = "panelSelect";
+            this.panelSelect.Size = new System.Drawing.Size(902, 276);
+            this.panelSelect.TabIndex = 47;
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Location = new System.Drawing.Point(33, 52);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(166, 21);
+            this.panel1.TabIndex = 26;
+            // 
+            // panelEdit
+            // 
+            this.panelEdit.BackColor = System.Drawing.SystemColors.Window;
+            this.panelEdit.Controls.Add(this.panel4);
+            this.panelEdit.Controls.Add(this.panel3);
+            this.panelEdit.Controls.Add(this.radioButtonSearchVar);
+            this.panelEdit.Controls.Add(this.radioButtonAreaDel);
+            this.panelEdit.Location = new System.Drawing.Point(80, 0);
+            this.panelEdit.Name = "panelEdit";
+            this.panelEdit.Size = new System.Drawing.Size(902, 276);
+            this.panelEdit.TabIndex = 48;
             // 
             // Form1
             // 
-            this.AcceptButton = this.okButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(988, 627);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ClientSize = new System.Drawing.Size(982, 625);
+            this.Controls.Add(this.panelConture);
+            this.Controls.Add(this.panelSelect);
+            this.Controls.Add(this.panelEdit);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.okButton);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "ExcelMachina";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panelConture.ResumeLayout(false);
+            this.panelSelect.ResumeLayout(false);
+            this.panelSelect.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panelEdit.ResumeLayout(false);
+            this.panelEdit.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.RadioButton radioButtonTemplate;
         private System.Windows.Forms.RadioButton radioButtonNewSheet;
         private System.Windows.Forms.RadioButton radioButtonSheetDelete;
@@ -485,7 +544,6 @@
         private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.RadioButton radioButtonAreaDel;
         private System.Windows.Forms.RadioButton radioButtonSearchVar;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -497,7 +555,15 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label dataNameLabelFrm1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button buttonSelectPnl;
+        private System.Windows.Forms.Button buttonEditPnl;
+        private System.Windows.Forms.Button okButton;
+        private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Panel panelConture;
+        private System.Windows.Forms.Panel panelSelect;
+        private System.Windows.Forms.Panel panelEdit;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

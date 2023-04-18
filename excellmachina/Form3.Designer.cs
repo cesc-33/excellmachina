@@ -67,16 +67,22 @@
             // 
             // replaceButton
             // 
+            this.replaceButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.replaceButton.FlatAppearance.BorderSize = 0;
+            this.replaceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.replaceButton.ForeColor = System.Drawing.SystemColors.Window;
             this.replaceButton.Location = new System.Drawing.Point(302, 93);
             this.replaceButton.Name = "replaceButton";
             this.replaceButton.Size = new System.Drawing.Size(121, 30);
             this.replaceButton.TabIndex = 3;
             this.replaceButton.Text = "Ersetzen";
-            this.replaceButton.UseVisualStyleBackColor = true;
+            this.replaceButton.UseVisualStyleBackColor = false;
             // 
             // buttonCancel
             // 
             this.buttonCancel.BackColor = System.Drawing.Color.Tomato;
+            this.buttonCancel.FlatAppearance.BorderSize = 0;
+            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Location = new System.Drawing.Point(302, 129);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(121, 30);
@@ -96,22 +102,30 @@
             // 
             // buttonPrevious
             // 
+            this.buttonPrevious.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonPrevious.FlatAppearance.BorderSize = 0;
+            this.buttonPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPrevious.ForeColor = System.Drawing.SystemColors.Window;
             this.buttonPrevious.Location = new System.Drawing.Point(168, 93);
             this.buttonPrevious.Name = "buttonPrevious";
             this.buttonPrevious.Size = new System.Drawing.Size(46, 30);
             this.buttonPrevious.TabIndex = 8;
             this.buttonPrevious.Text = "⮜";
-            this.buttonPrevious.UseVisualStyleBackColor = true;
+            this.buttonPrevious.UseVisualStyleBackColor = false;
             this.buttonPrevious.Click += new System.EventHandler(this.buttonPrevious_Click);
             // 
             // buttonNext
             // 
+            this.buttonNext.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonNext.FlatAppearance.BorderSize = 0;
+            this.buttonNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNext.ForeColor = System.Drawing.SystemColors.Window;
             this.buttonNext.Location = new System.Drawing.Point(220, 93);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(46, 30);
             this.buttonNext.TabIndex = 9;
             this.buttonNext.Text = "⮞";
-            this.buttonNext.UseVisualStyleBackColor = true;
+            this.buttonNext.UseVisualStyleBackColor = false;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // label3
@@ -127,6 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(435, 171);
             this.ControlBox = false;
             this.Controls.Add(this.label3);
