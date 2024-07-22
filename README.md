@@ -11,14 +11,9 @@ It still has some bugs and some features will be added over time.
 	-The search function should include that you can find the next or previous value by pressing a button.
 	-Values in the cells can not be edited
 	-Cells are not displayed true to original (missing color and formation)
-	-Create copy of original workbook and if user clicks "CANCEL BUTTON" delete workbook and change copy to original name.
+ 	-Columns and rows need an ID like in Excel
+  	-Missing option to add a sheet instead of reloading it
 
-	Upcoming features:
-	-Open the last edited file
-	-Option to add a sheet instead of reloading it
-	-columns and rows need an ID like in Excel
-	-Dark Mode switch
-	-Localization
 	
 The Forms:
 
